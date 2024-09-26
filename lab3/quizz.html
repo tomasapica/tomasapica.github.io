@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cidade do Seixal</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <code>SEIXAL</code>
+            </h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="local.html">Localização</a>
+                <a href="multimedia.html">Multimédia</a>
+                <a href="info.html">Informações</a>
+                <a href="quizz.html">Quizz</a>
+                <a href="viagem.html">Viagem</a>
+            </nav>
+            <img src="images/Baía_Seixal.png" alt="Baía de Setúbal à Noite">
+        </header>
+        <main>
+            <h2>Quizz</h2>
+            <p>
+                <form method="get" action="https://postman-echo.com/get">
+                    <fieldset>
+                        <legend>Identificação</legend>
+                        <p>
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" required>
+                        </p>
+                        <p>
+                            <label for="email">Apelido:</label>
+                            <input type="text" name="apelido" id="apelido" required>
+                        </p>
+                        <p>
+                            <label for="apelido">Email:</label>
+                            <input type="text" name="email" id="email" required>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>O Seixal é conhecido pela sua tradição em que tipo de indústria?</legend>
+                        <p>
+                            <input type="radio" name="opcao" id="opcao" required>Metalúrgica
+                            <input type="radio" name="opcao" id="opcao" required>Cortiça
+                            <input type="radio" name="opcao" id="opcao" required>Pesca
+                            <input type="radio" name="opcao" id="opcao" required>Vinícola
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Qual é o rio que banha a cidade do Seixal?</legend>
+                        <p>
+                            <input type="radio" name="opcao" id="opcao" required>Tejo
+                            <input type="radio" name="opcao" id="opcao" required>Douro
+                            <input type="radio" name="opcao" id="opcao" required>Guadiana
+                            <input type="radio" name="opcao" id="opcao" required>Mondego
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Em que distrito está localizada a cidade do Seixal?</legend>
+                        <p>
+                            <input type="radio" name="opcao" id="opcao" required>Setúbal
+                            <input type="radio" name="opcao" id="opcao" required>Lisboa
+                            <input type="radio" name="opcao" id="opcao" required>Faro
+                            <input type="radio" name="opcao" id="opcao" required>Porto
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Gostaria de visitar a cidade do Seixal?</legend>
+                        <p>
+                            <input type="radio" name="opcao" id="opcao" required>Absolutamente!
+                            <input type="radio" name="opcao" id="opcao" required>Sim.
+                            <input type="radio" name="opcao" id="opcao" required>Não.
+                        </p>
+                    </fieldset>
+                    <p>
+                        <input type="submit" value="Submeter" required>
+                    </p>
+                </form>
+            </p>
+        </main>
+        <footer>
+            <p>DIW 2024</p>
+        </footer>
+    </body>
+</html>
