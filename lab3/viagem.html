@@ -20,33 +20,87 @@
             <img src="images/Baia_Seixal.png" alt="Baía de Setúbal à Noite">
         </header>
         <main>
-            <h2>Home</h2>
+            <h2>Viagem</h2>
             <p>
-                O Seixal pulsa com vida e cultura, um lugar onde o passado se entrelaça com o presente
-                para contar histórias de luta, trabalho e evolução. Da antiga fábrica de cortiça Mundet
-                aos eventos culturais que animam as suas praças e ruas, esta cidade vibra com criatividade e expressão.
-                Cada esquina revela um pedaço de história, desde os moinhos de maré até aos edifícios industriais que,
-                hoje, se transformaram em espaços de arte e inovação.
-            </p>
-            <p>
-                Aqui, tradição e modernidade caminham lado a lado. A cidade é um exemplo vivo de como
-                as comunidades podem se reinventar, preservando o seu legado e abraçando novas oportunidades.
-                Ao passear pelas suas ruas, sente-se a energia de um povo orgulhoso, que construiu o futuro com
-                base no trabalho árduo e na união. O Seixal é um convite a celebrar as raízes enquanto se sonha com o amanhã,
-                um lugar onde cada detalhe inspira uma nova perspectiva sobre o que significa crescer e prosperar.
-            </p>
-            <p>
-                Nas margens tranquilas da Baía do Seixal, o tempo parece desacelerar. O reflexo suave das casas coloridas
-                dança nas águas serenas, enquanto os barcos tradicionais varinos flutuam, como guardiões de uma história
-                marítima que ecoa há séculos. Aqui, o ritmo da cidade mistura-se harmoniosamente com a natureza.
-                O vento leve traz o cheiro do rio Tejo e as conversas dos pescadores, enquanto a luz do pôr do sol pinta
-                o céu com tons de ouro e laranja.
-            </p>
-            <p>
-                É um lugar onde se encontra paz, onde a simplicidade do momento nos faz lembrar o quanto a beleza reside
-                nas pequenas coisas: o som das águas batendo contra os cais, a sombra dos pinheiros ao longo das margens,
-                e o sorriso de quem passeia pelas ruas históricas. O Seixal é mais do que um ponto no mapa; é uma fonte
-                de inspiração e serenidade, um refúgio onde a alma encontra espaço para respirar.
+                <form method="get" action="https://postman-echo.com/get">
+                    <fieldset>
+                        <legend>Identificação</legend>
+                        <p>
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="identificacao" id="nome" placeholder="Escreva o seu nome" autocomplete="on" size="30" maxlength="50" autofocus required>
+                        </p>
+                        <p>
+                            <label for="apelido">Apelido:</label>
+                            <input type="text" name="identificacao" id="apelido" placeholder="Escreva o seu apelido" autocomplete="on" size="30" maxlength="50" required>
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="identificação" id="email" placeholder="exemplo@dominio.com" autocomplete="on" required>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Informações</legend>
+                        <p>
+                            Entre que datas pretende realizar a viagem? (Partida e Chegada)
+                        </p>
+                        <p>
+                            <label for="data_partida">Data de Partida:</label>
+                            <input type="date" id="data_partida" name="data_partida" required>
+                            <br>
+                            <label for="data_chegada">Data de Chegada:</label>
+                            <input type="date" id="data_chegada" name="data_chegada" required>
+                        </p>
+                        <p>
+                            Quantas passageiros vão participar da viagem?
+                        </p>
+                        <p>
+                            <label for="num_passageiros">Número de passageiros</label>
+                            <input type="number" id="num_passageiros" name="num_passageiros" min="1" max="100" step="1" required>
+                        </p>
+                        <p>
+                            Qual é o seu meio de transporte preferido?
+                        </p>
+                        <p>
+                            <label for="transporte">Transporte:</label>
+                            <input type="text" id="transporte" name="transporte" list="lista_transportes" required>
+                            <datalist id="lista_transportes">
+                                <option value="Avião">
+                                <option value="Barco">
+                                <option value="Carro">
+                                <option value="Comboio">
+                            </datalist>
+                        </p>
+                        <p>
+                            Que tipo de serviço deseja na sua viagem?
+                        </p>
+                        <p>
+                            <input type="radio" name="tipo_servico" id="basico" required>
+                            <label for="absolutamente">Básico</label>
+                            
+                            <input type="radio" name="tipo_servico" id="premium" required>
+                            <label for="sim">Premium</label>
+                        </p>
+                        <p>
+                            Tem algum pedido especial a fazer?
+                        </p>
+                        <p>
+                            <label for="observacoes">Observações:</label>
+                            <input type="text" name="identificacao" id="nome" placeholder="Escreva o seu Pedido Especial" autocomplete="off" size="80" maxlength="100">
+                        </p>
+                        <p>
+                            Qual o valor que espera gastar por pessoa e por dia na sua viagem (€):
+                        </p>
+                        <p>
+                            <label for="num_visitas">Valor em Euros:</label>
+                            <input type="number" id="num_visitas" name="num_visitas" min="0" max="100000" step="0.01" required>
+                        </p>
+                    </fieldset>
+                    <p>
+                        <input type="submit" value="Submeter Formulário">
+                        <input type="reset" value="Reiniciar Formulário">
+                    </p>
+                </form>
             </p>
         </main>
         <footer>
