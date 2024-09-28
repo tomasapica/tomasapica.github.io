@@ -27,15 +27,15 @@
                         <legend>Identificação</legend>
                         <p>
                             <label for="nome">Nome:</label>
-                            <input type="text" id="nome" name="identificacao" required>
+                            <input type="text" id="nome" name="identificacao" placeholder="Escreva o seu nome" autocomplete="on" size="30" maxlength="50" autofocus required>
                         </p>
                         <p>
                             <label for="apelido">Apelido:</label>
-                            <input type="text" id="apelido" name="identificacao" required>
+                            <input type="text" id="apelido" name="identificacao" placeholder="Escreva o seu apelido" autocomplete="on" size="30" maxlength="50" required>
                         </p>
                         <p>
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="identificação" required>
+                            <input type="email" id="email" name="identificação" placeholder="exemplo@dominio.com" autocomplete="on" required>
                         </p>
                     </fieldset>
 
@@ -89,14 +89,14 @@
                         </p>
                         <p>
                             <label for="num_visitas">Número de visitas:</label>
-                            <input type="number" id="num_visitas" name="num_visitas" min="0" max="50">
+                            <input type="number" id="num_visitas" name="num_visitas" min="0" max="50" step="1">
                         </p>
                         <p>
                             O quão bem conhece a cidade do Seixal? (0 = Nada, 100 = Muito Bem)
                         </p>
                         <p>
                             <label for="conhecimento">Conhecimento:</label>
-                            <input type="range" id="conhecimento" name="conhecimento" min="0" max="100" value="50">
+                            <input type="range" id="conhecimento" name="conhecimento" min="0" max="100" value="50" step="10">
                         </p>
                         <p>
                             Que prato típico do Seixal gostarias de experimentar?
@@ -114,7 +114,7 @@
                             Envia-nos uma imagem da tua última visita ao Seixal! :
                         </p>
                         <p>
-                            <input type="image" src="upload_icon.png" alt="Upload imagem" width="50" height="50">
+                            <input type="image" src="upload_icon.png" alt="Carregar imagem" width="50" height="50">
                         </p>
                     </fieldset>
                     <p>
