@@ -27,84 +27,99 @@
                         <legend>Identificação</legend>
                         <p>
                             <label for="nome">Nome:</label>
-                            <input type="text" name="nome" id="nome" required>
+                            <input type="text" id="nome" name="identificacao" required>
                         </p>
                         <p>
                             <label for="apelido">Apelido:</label>
-                            <input type="text" name="apelido" id="apelido" required>
+                            <input type="text" id="apelido" name="identificacao" required>
                         </p>
                         <p>
                             <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" required>
+                            <input type="email" id="email" name="identificação" required>
                         </p>
                     </fieldset>
 
                     <fieldset>
-                        <legend>Perguntas</legend>
-                        <p>
-                            O Seixal é conhecido pela sua tradição em que tipo de indústria?
-                        </p>
-                        <p>
-                            <input type="radio" name="metalurgica" id="metalurgica" required>
-                            <label for="metalurgica">Metalúrgica</label>
-
-                            <input type="radio" name="cortica" id="cortica" required>
-                            <label for="cortica">Cortiça</label>
-
-                            <input type="radio" name="pesca" id="pesca" required>
-                            <label for="pesca">Pesca</label>
-
-                            <input type="radio" name="vinicola" id="vinicola" required>
-                            <label for="vinicola">Vinícola</label>
-                        </p>
-                        <p>
-                            Qual é o rio que banha a cidade do Seixal?
-                        </p>
-                        <p>
-                            <input type="radio" name="tejo" id="tejo" required>
-                            <label for="tejo">Tejo</label>
-                            
-                            <input type="radio" name="douro" id="douro" required>
-                            <label for="douro">Douro</label>
-                            
-                            <input type="radio" name="guadiana" id="guadiana" required>
-                            <label for="guadiana">Guadiana</label>
-                            
-                            <input type="radio" name="mondego" id="mondego" required>
-                            <label for="mondego">Mondego</label>
-                        </p>
-                        <p>
-                            Em que distrito está localizada a cidade do Seixal?
-                        </p>
-                        <p>
-                            <input type="radio" name="setubal" id="setubal" required>
-                            <label for="setubal">Setúbal</label>
-                            
-                            <input type="radio" name="lisboa" id="lisboa" required>
-                            <label for="lisboa">Lisboa</label>
-                            
-                            <input type="radio" name="faro" id="faro" required>
-                            <label for="faro">Faro</label>
-                            
-                            <input type="radio" name="porto" id="porto" required>
-                            <label for="porto">Porto</label>
-                        </p>
+                        <legend>Quizz</legend>
                         <p>
                             Gostaria de visitar a cidade do Seixal?
                         </p>
                         <p>
-                            <input type="radio" name="absolutamente" id="absolutamente" required>
+                            <input type="radio" name="visitar" id="absolutamente" required>
                             <label for="absolutamente">Absolutamente!</label>
                             
-                            <input type="radio" name="sim" id="sim" required>
+                            <input type="radio" name="visitar" id="sim" required>
                             <label for="sim">Sim.</label>
                             
-                            <input type="radio" name="nao" id="nao" required>
+                            <input type="radio" name="visitar" id="nao" required>
                             <label for="nao">Não.</label>
+                        </p>
+                        <p>
+                            Se respondeu "Absolutamente!" ou "Sim." à pergunta anterior, quando planeia visitar o Seixal?
+                        </p>
+                        <p>
+                            <label for="data_visita">Data:</label>
+                            <input type="date" id="data_visita" name="data_visita">
+                            
+                            <label for="hora_visita">Hora:</label>
+                            <input type="time" id="hora_visita" name="hora_visita">
+                        </p>
+                        <p>
+                            Que atividades gostaria de fazer no Seixal? (Selecione todas as que aplicam)
+                        </p>
+                        <p>
+                            <input type="checkbox" id="caminhada" name="atividades" value="caminhada">
+                            <label for="caminhada">Caminhada à beira-rio</label>
+                
+                            <input type="checkbox" id="kayak" name="atividades" value="kayak">
+                            <label for="kayak">Passeio de kayak</label>
+                
+                            <input type="checkbox" id="mercado" name="atividades" value="mercado">
+                            <label for="mercado">Visitar o Mercado Municipal</label>
+                        </p>
+                        <p>
+                            Escolha a cor que associaria ao Seixal:
+                        </p>
+                        <p>
+                            <label for="cor">Cor:</label>
+                            <input type="color" id="cor" name="cor" value="#000000">
+                        </p>
+                        <p>
+                            Quantas vezes já visitou o Seixal?
+                        </p>
+                        <p>
+                            <label for="num_visitas">Número de visitas:</label>
+                            <input type="number" id="num_visitas" name="num_visitas" min="0" max="50">
+                        </p>
+                        <p>
+                            O quão bem conhece a cidade do Seixal? (0 = Nada, 100 = Muito Bem)
+                        </p>
+                        <p>
+                            <label for="conhecimento">Conhecimento:</label>
+                            <input type="range" id="conhecimento" name="conhecimento" min="0" max="100" value="50">
+                        </p>
+                        <p>
+                            Que prato típico do Seixal gostarias de experimentar?
+                        </p>
+                        <p>
+                            <label for="prato">Prato:</label>
+                            <input type="text" id="prato" name="prato" list="pratos_sugestoes" required>
+                            <datalist id="pratos_sugestoes">
+                                <option value="Caldeirada de peixe">
+                                <option value="Ameijoas à Bulhão Pato">
+                                <option value="Choco frito">
+                            </datalist>
+                        </p>
+                        <p>
+                            Envia-nos uma imagem da tua última visita ao Seixal! :
+                        </p>
+                        <p>
+                            <input type="image" src="upload_icon.png" alt="Upload imagem" width="50" height="50">
                         </p>
                     </fieldset>
                     <p>
-                        <input type="submit" value="Submeter" required>
+                        <input type="submit" value="Submeter Quizz">
+                        <input type="reset" value="Reiniciar Quizz">
                     </p>
                 </form>
             </p>
