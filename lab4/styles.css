@@ -11,14 +11,71 @@ body {
 }
 
 header {
-    background-color:#00e1ff;
-}
-
-a:hover {
-    background-color: #ffffff;
-    color: #91ff00;
+    background-color:#5becff;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
 }
 
 nav {
-    background-color: rgb(255, 255, 255);
+    background-color: #353535;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    color: #000000;
+    padding: 5px;
+}
+
+#fotografias h3, #video h3, #poema h3, iframe {
+    color: #5becff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section img {
+    width: 20%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.poema {
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
 }
