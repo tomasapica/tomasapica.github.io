@@ -147,6 +147,8 @@ p {
 
 
 footer {
-    background-color: #000000;
+    background-color: #353535;
+    color: #ffffff;
     text-align: center;
+    padding: 10px;
 }
