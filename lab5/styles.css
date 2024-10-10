@@ -26,13 +26,16 @@ header > img {
 nav {
     background-color: #353535;
     border-radius: 6px;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
+    text-decoration: none;
+    justify-content: space-evenly;
+    display: flexbox;
 }
 
 nav a {
     color: white;
-    margin: 20px;
+    margin: 15px;
     text-decoration: none;
 }
 
@@ -41,19 +44,19 @@ nav a:hover {
     border-radius: 6px;
     color: #000000;
     padding: 5px;
+    text-decoration: none;
 }
 
 div {
-    padding: 20px;
+    padding: 15px;
     background-color: #b7f7ff;
-    margin: 20px;
+    margin: 15px;
     border-radius: 8px;
 }
 
-ol {
-    padding: 20px;
+div > div {
+    padding: 35px;
     background-color: #ffffff;
-    border-radius: 8px;
 }
 
 h3.subtitulo {
@@ -83,6 +86,7 @@ iframe {
     max-width: 600px;
     border-radius: 6px;
     margin: 0 auto;
+    justify-content: center;
     display: block;
 }
 
@@ -113,6 +117,7 @@ table {
     margin: 20px 0;
     font-size: 18px;
     text-align: center;
+    border-radius: 6px;
 }
 
 th, td {
@@ -149,15 +154,12 @@ a:hover {
 }
 
 ol {
+    color: #000000;
     list-style-type: circle;
 }
 
-ol:nth-child(odd) {
-    color: #399daa;
-}
-
-ol:nth-child(even) {
-    color: #000000;
+ol li:nth-child(odd) {
+    color: #00bcd4;
 }
 
 ul {
@@ -168,6 +170,7 @@ ul {
 }
 
 li {
+    font-size: 2em;
     margin-bottom: 6px;
 }
 
