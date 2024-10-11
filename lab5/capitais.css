@@ -4,3 +4,149 @@
     box-sizing: border-box;
 }
 
+body {
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+header {
+    display: flex;
+    position: sticky;
+
+    justify-content: space-between;  
+    align-items: center;
+
+    color: #000000;
+    background-color: #ffffff;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    padding: 20px;
+
+    text-decoration: none;
+
+    color: #5a5a5a;
+}
+
+nav a:last-child {
+    color: #5a5a5a;
+    background-color: #e2e2e2;
+}
+
+nav a:hover {
+    color: #000000;
+    background-color: #70eeff;
+}
+
+nav a:active {
+    background-color: #a9f5ff;
+}
+
+#poema {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 50vh;
+    width: 100vw;
+
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+
+    background-color: #a9f5ff;
+}
+
+#poema em {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-size: 0.5em;
+    font-style: italic;
+}
+
+#paisagem div {
+    position: relative;
+}
+
+#paisagem img {
+    width: 100vw;
+}
+
+#paisagem a {
+    position: absolute;
+
+    bottom: 20px;
+    right: 20px;
+
+    color: #ffffff;
+}
+
+#cidades {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#cidades section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 20px;
+    border-radius: 15px;
+
+    background-color: #ffffff;
+}
+
+#cidades img {
+    width: 100px;
+    border-radius: 15px 0 0 15px;
+}
+
+#cidades div {
+    height: 100%;
+    width: 100px;
+
+    text-align: center;
+}
+
+#cidades div:hover {
+    height: 100%;
+    width: 100px;
+
+    background-color: #cff9ff;
+}
+
+#experimenta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#experimenta div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+
+    visibility: hidden;
+    background-color: #a9f5ff;
+}
+
+#experimenta:hover div {
+    visibility: visible;
+}
