@@ -215,6 +215,10 @@ p {
     color: #6dcedb;
 }
 
+#fotografias a:hover {
+    cursor: zoom-in;
+}
+
 
 footer {
     padding: 10px;
