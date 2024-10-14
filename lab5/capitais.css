@@ -150,3 +150,12 @@ nav a:active {
 #experimenta:hover div {
     visibility: visible;
 }
+
+footer {
+    padding: 10px;
+
+    text-align: center;
+
+    color: #ffffff;
+    background-color: #353535;
+}

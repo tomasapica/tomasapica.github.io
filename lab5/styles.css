@@ -142,16 +142,16 @@ table {
     text-align: center;
 }
 
-th, td {
-    padding: 10px 15px;
-}
-
-th {
+table tr:nth-child(odd) td:nth-child(odd) {
     color: #ffffff;
     background-color: #00bad3;
 }
 
-th:nth-child(even) {
+td {
+    padding: 10px 15px;
+}
+
+tr:nth-child(even) {
     color: #000000;
     background-color: #ffffff;
 }
@@ -159,11 +159,6 @@ th:nth-child(even) {
 tr {
     color: #ffffff;
     background-color: #999999;
-}
-
-tr:nth-child(even) {
-    color: #000000;
-    background-color: #ffffff;
 }
 
 a {
