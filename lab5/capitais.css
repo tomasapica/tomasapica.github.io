@@ -48,6 +48,10 @@ nav a:hover {
 }
 
 nav a:active {
+    background-color: #c0c0c0;
+}
+
+nav a:visited {
     background-color: #94fdae;
 }
 

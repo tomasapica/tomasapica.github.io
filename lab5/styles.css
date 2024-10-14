@@ -69,7 +69,7 @@ nav a:hover::after {
 }
 
 nav a:active {
-    background-color: #aaaaaa;
+    background-color: #c0c0c0;
 }
 
 nav a:visited {
