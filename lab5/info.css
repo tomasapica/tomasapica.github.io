@@ -23,8 +23,6 @@ header {
 }
 
 header > img {
-    margin: 20px;
-
     border-radius: 6px;
 
     background-color: #ffffff;
@@ -90,12 +88,7 @@ div > div {
     background-color: #ffffff;
 }
 
-h2 {
-    margin-bottom: 10px;
-}
-
 h3.subtitulo {
-    margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid #5becff;
@@ -157,30 +150,25 @@ label, input {
 
 table {
     width: 100%;
+    border-collapse: collapse;
     margin: 20px 0;
-    border-radius: 6px;
-
     font-size: 18px;
     text-align: center;
+    box-shadow: 0 2px 5px #000000;
 }
 
-table tr:nth-child(odd) td:nth-child(odd) {
-    color: #ffffff;
-    background-color: #00bad3;
-}
-
-td {
+th, td {
     padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #6dcedb;
+    color: #000000;
 }
 
 tr:nth-child(even) {
-    color: #000000;
-    background-color: #ffffff;
-}
-
-tr {
-    color: #ffffff;
-    background-color: #999999;
+    background-color: #f3f3f3;
 }
 
 a {
