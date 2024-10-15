@@ -129,11 +129,11 @@ nav a:visited {
     text-align: center;
 }
 
-#cidades div:hover {
+#cidades section:hover div {
     height: 100%;
     width: 100px;
 
-    background-color: #cff9ff;
+    background-color: #e6e6e6;
 }
 
 #experimenta {
