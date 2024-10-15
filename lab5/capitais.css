@@ -5,6 +5,8 @@
 }
 
 body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
     color: #000000;
     background-color: #eeeeee;
 }
@@ -117,6 +119,10 @@ nav a:visited {
     background-color: #ffffff;
 }
 
+#cidades section:hover {
+    background-color: #e0e0e0;
+}
+
 #cidades img {
     width: 100px;
     border-radius: 15px 0 0 15px;
@@ -127,13 +133,6 @@ nav a:visited {
     width: 100px;
 
     text-align: center;
-}
-
-#cidades section:hover div {
-    height: 100%;
-    width: 100px;
-
-    background-color: #e6e6e6;
 }
 
 #experimenta {
