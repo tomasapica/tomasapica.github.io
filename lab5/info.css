@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 nav a:hover::after {
-    content: '<';
+    content: ' <';
     font-family: 'Material Icons';
     width: 100%;
     background-color: white;
