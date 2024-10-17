@@ -13,29 +13,33 @@ body {
 }
 
 header {
-    padding: 20px;
+    width: 100%;
 
     text-align: center;
     text-transform: capitalize;
 
     color: #ffffff;
-    background-color:#5becff;
 }
 
 header > img {
     margin: 20px;
-
     border-radius: 6px;
 
     background-color: #ffffff;
+}
+
+h1 {
+    padding: 20px;
+
+    background-color:#5becff;
 }
 
 nav {
     display: flexbox;
     justify-content: space-evenly;
 
+    width: 100%;
     padding: 12px;
-    border-radius: 6px;
 
     text-align: center;
     text-decoration: none;
@@ -74,6 +78,10 @@ nav a:active {
 
 nav a:visited {
     background-color: #94fdae;
+}
+
+#imagem_menu img {
+    border-radius: 6px;
 }
 
 div {

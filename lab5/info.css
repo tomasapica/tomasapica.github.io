@@ -13,27 +13,33 @@ body {
 }
 
 header {
-    padding: 20px;
+    width: 100%;
 
     text-align: center;
     text-transform: capitalize;
 
     color: #ffffff;
-    background-color:#5becff;
 }
 
 header > img {
+    margin: 20px;
     border-radius: 6px;
 
     background-color: #ffffff;
+}
+
+h1 {
+    padding: 20px;
+
+    background-color:#5becff;
 }
 
 nav {
     display: flexbox;
     justify-content: space-evenly;
 
+    width: 100%;
     padding: 12px;
-    border-radius: 6px;
 
     text-align: center;
     text-decoration: none;
@@ -74,6 +80,10 @@ nav a:visited {
     background-color: #94fdae;
 }
 
+#imagem_menu img {
+    border-radius: 6px;
+}
+
 div {
     margin: 15px;
     padding: 15px;
@@ -88,7 +98,12 @@ div > div {
     background-color: #ffffff;
 }
 
+h2 {
+    margin-bottom: 10px;
+}
+
 h3.subtitulo {
+    margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid #5becff;
@@ -152,6 +167,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    
     font-size: 18px;
     text-align: center;
     box-shadow: 0 2px 5px #000000;
