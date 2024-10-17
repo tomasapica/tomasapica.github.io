@@ -67,13 +67,12 @@ nav a:hover {
 
 nav a:hover::after {
     content: ' <';
-    font-family: 'Material Icons';
     width: 100%;
     background-color: white;
 }
 
-nav a:active {
-    background-color: #c0c0c0;
+nav a:visited {
+    color: #55ff7f;
 }
 
 nav a:visited {
