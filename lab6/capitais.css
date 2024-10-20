@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-
     margin:0;  
     padding:0;  
 }
@@ -14,9 +13,11 @@ body {
 
 header {
     display: flex;
-    position: sticky;
 
-    justify-content: space-between;  
+    flex-wrap: wrap;
+
+    width: 100vw;
+    justify-content: space-between;
     align-items: center;
 
     color: #000000;
@@ -29,10 +30,14 @@ h1 {
 
 header nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
 }
 
 nav a {
+    
     padding: 20px;
 
     text-decoration: none;
