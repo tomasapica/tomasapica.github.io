@@ -28,16 +28,94 @@ footer {
 @media (max-width: 480px) {
     body {
         display: grid;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
 
         grid-template-columns: 1fr;
-        grid-template-rows: 10% 20% auto 1fr 5%;
-        grid-template-areas: 
-        'header-area'
-        'nav-area'
-        'aside-area'
-        'main-area'
-        'footer-area';
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:'header-area'
+                            'nav-area'
+                            'aside-area'
+                            'main-area'
+                            'footer-area';
+    }
+
+    .dropdown {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        padding: 14px 16px;
+        margin: 0;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        color: #000000;
+        background-color: #f0f0f0;
+    }
+
+    .dropdown:hover {
+        background-color: #c2c2c2;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        margin-top: 25px;
+        background-color: #f0f0f0;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px #000000;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 10px 10px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
 }
+
+/*
+
+Mobile landscape (largura entre 481px e 767px)
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: lightgreen;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+Tablet (largura entre 768px e 1024px)
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color: lightcoral;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+Laptop (largura entre 1025px e 1440px)
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        background-color: lightyellow;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+4K (largura maior que 1440px) 
+@media only screen and (min-width: 1441px) {
+    body {
+        
+    }
+}
+
+*/
