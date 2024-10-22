@@ -6,6 +6,7 @@
 
 #div_video {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
 }
@@ -13,7 +14,6 @@
 #texto_video {
     position: absolute;
     top: 25%;
-    left: 50%;
     text-align: center;
     font-size: 100px;
 }

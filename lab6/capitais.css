@@ -159,6 +159,42 @@ nav a:visited {
     color: #ffffff;
 }
 
+#galeria {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#galeria section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 20px;
+    border-radius: 15px;
+
+    background-color: #ffffff;
+}
+
+#galeria section:hover {
+    background-color: #e0e0e0;
+}
+
+#galeria img {
+    width: 100px;
+    border-radius: 15px 0 0 15px;
+}
+
+#galeria div {
+    height: 100%;
+    width: 100px;
+
+    text-align: center;
+}
+
 #experimenta {
     display: flex;
     justify-content: space-around;
