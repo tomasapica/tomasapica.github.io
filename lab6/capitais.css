@@ -170,7 +170,7 @@ nav a:visited {
 
 #galeria section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 
     margin: 20px;
@@ -185,7 +185,6 @@ nav a:visited {
 
 #galeria img {
     width: 100px;
-    border-radius: 15px 0 0 15px;
 }
 
 #galeria div {
@@ -193,6 +192,42 @@ nav a:visited {
     width: 100px;
 
     text-align: center;
+}
+
+#scale_img, #invert_img, #rotate_img, #mirror_img, #translate_img, #opacity_img, #skew_img, #contrast_img {
+    transition: transform 0.5s ease;
+}
+
+#scale_img:hover {
+    transform: scale(0.7);
+}
+
+#invert_img:hover {
+    filter: invert();
+}
+
+#rotate_img:hover {
+    transform: rotate(-70deg);
+}
+
+#mirror_img:hover {
+    transform: scaleX(-1);
+}
+
+#translate_img:hover {
+    transform: translate(-20px,-10px);
+}
+
+#opacity_img:hover {
+    filter: opacity(0.3);
+}
+
+#skew_img:hover {
+    transform: skew(30deg,-10deg);
+}
+
+#contrast_img:hover {
+    filter: contrast(200%);
 }
 
 #experimenta {
