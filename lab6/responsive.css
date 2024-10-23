@@ -275,7 +275,7 @@ footer {
     }
 }
 
-/* 4K (largura maior que 1440px) */
+/* 4K */
 @media only screen and (min-width: 1441px) {
     body {
         display: grid;
