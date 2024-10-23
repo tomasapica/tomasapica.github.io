@@ -142,16 +142,17 @@ nav a:visited {
 }
 
 .parallax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-image: url("images/clouds_mountains.jpg");
     min-height: 500px;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     text-align: center;
     font-size: 40px;
@@ -171,6 +172,7 @@ nav a:visited {
 #galeria section {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 
     margin: 20px;
@@ -184,7 +186,7 @@ nav a:visited {
 }
 
 #galeria img {
-    width: 100%;
+    width: 200px;
 }
 
 #galeria div {
