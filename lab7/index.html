@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lab 6</title>
+</head>
+<body>
+    <header>
+        <h1>Laboratório 6</h1>
+    </header>
+    <main>
+        <ol>
+            <li>
+                Passa por aqui!
+            </li>
+            <li>
+                Pinta-me!
+                <button>Red</button>
+                <button>Green</button>
+                <button>Blue</button>
+            </li>
+            <li>
+                Experimenta escrever...
+                <input type="text" id="escrever" name="texto">
+            </li>
+            <li>
+                Escolha uma cor em inglês:
+                <input type="text" id="cor_ingles" name="texto">
+                <input type="submit" value="submeter">
+            </li>
+            <li>
+                <button>Conta!</button>
+                0
+            </li>
+        </ol>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        let counter = 0;
+        const heading = document.querySelector('h1');
+        function count() {
+           counter++;
+           heading.textContent = counter;
+        }
+    </script>
+
+    <!-- HTML já carregado! -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
