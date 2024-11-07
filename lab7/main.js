@@ -32,7 +32,34 @@ document.addEventListener('DOMContentLoaded', function() {
         mudar_cor('blue');
     };
 
-    // contador butao
+    // muda cor ao escrever
+    const inputTexto = document.querySelector('#escrever');
+    const colors = ['red', 'green', 'blue', 'yellow'];
+    let indexCores = 0;
+
+    function changeColor() {
+        inputTexto.style.backgroundColor = colors[indexCores];
+        indexCores = (indexCores + 1) % colors.length;
+    }
+
+    inputTexto.addEventListener('input', changeColor);
+
+    // muda cor background submeter form
+    const corInput = document.querySelector('#cor_ingles');
+    const butaoSubmit = document.querySelector('input[type="submit"]');
+
+    function changeBackgroundColor() {
+        const color = corInput.value;
+        document.body.style.backgroundColor = color;
+    }
+
+    butaoSubmit.addEventListener('click', function() {;
+        changeBackgroundColor();
+        corInput.value = "";
+        return false;
+    });
+
+    // contador com butao
     let counter = 0;
 
     function count() {

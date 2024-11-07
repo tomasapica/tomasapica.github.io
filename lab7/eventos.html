@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            background-color: lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+        }
+    </style>
+    <script defer src="eventos.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Demonstrando Eventos em JavaScript</h1>
+    </header>
+    <main>
+        <h2>Eventos de Rato</h2>
+        <div class="box" id="clickBox">Clique aqui</div>
+        <div class="box" id="doubleClickBox">Clique duas vezes aqui</div>
+        <div class="box" id="hoverBox">Passe o mouse aqui</div>
+        <div class="box" id="moveBox">Mova o mouse aqui</div>
+
+        <h2>Eventos de Teclado</h2>
+        <input type="text" id="inputField" placeholder="Digite algo...">
+
+        <h2>Eventos de Formulário</h2>
+        <form id="colorForm">
+            <label for="colorSelect">Escolha uma cor:</label>
+            <select id="colorSelect">
+                <option value="red">Vermelho</option>
+                <option value="green">Verde</option>
+                <option value="blue">Azul</option>
+            </select>
+            <button type="submit">Aplicar Cor</button>
+        </form>
+    </main>
+</body>
+</html>
