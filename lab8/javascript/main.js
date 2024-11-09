@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // => Arrow Functions
 
-    // texto muda com mouse
+    // 1. texto muda com mouse
     const texto = document.querySelector('#passar');
 
     texto.onmouseover = () => {
@@ -14,30 +14,18 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 
-    // muda cor frase butoes
-    const cor_texto = document.querySelector('#pintar');
-    const butao_red = document.querySelector('#red'); // botao red
-    const butao_green = document.querySelector('#green'); // botao green
-    const butao_blue = document.querySelector('#blue'); // botao blue
+    // 2. muda cor frase butoes
+    const textColor = document.querySelector('#colorButtons');
 
-    mudar_cor = (color) => {
-        cor_texto.style.color = color;
-    }
-
-    butao_red.onclick = () => {
-        mudar_cor('red');
-    };
-
-    butao_green.onclick = () => {
-        mudar_cor('green');
-    };
-
-    butao_blue.onclick = () => {
-        mudar_cor('blue');
-    };
+    document.querySelectorAll('.pintar').forEach(button => {
+        button.addEventListener('click', () => {
+            const color = button.dataset.color;
+            textColor.style.color = color;
+        });
+    });
 
 
-    // muda cor ao escrever
+    // 3. muda cor ao escrever
     const inputTexto = document.querySelector('#escrever');
     const colors = ['red', 'green', 'blue', 'yellow'];
     let indexCores = 0;
@@ -50,15 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
     inputTexto.addEventListener('input', changeColor);
 
 
-    // seleciona cor - background
+    // 4. seleciona cor - background
     const colorSelect = document.querySelector('#colorSelect');
     
-    colorSelect.addEventListener('change', () => {
+    colorSelect.onchange = function() { // this.value precisa de 'contexto'
         document.body.style.backgroundColor = this.value;
-    });
+    }
 
 
-    // contador com butao
+    // 5. contador com butao
     const numero = document.querySelector('#contador');
     const butaoContar = document.querySelector('#butaoContar');
 
@@ -78,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     butaoContar.onclick = count;
 
 
-    // contruir uma frase
+    // 6. contruir uma frase
     const nome = document.querySelector('#nome');
     const idade = document.querySelector('#idade');
     const form = document.querySelector('#phraseForm');
@@ -90,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 
-    // contador com butao
+    // 7. contador automatico
     let counterAuto = 0;
 
     automaticCount = () => {
