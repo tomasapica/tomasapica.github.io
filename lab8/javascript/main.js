@@ -87,4 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setInterval(automaticCount, 1000)
+
+    // finished lab8!
 });
