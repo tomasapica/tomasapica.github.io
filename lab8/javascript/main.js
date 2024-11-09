@@ -1,12 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => { 
+
+    // => Arrow Functions
+
     // texto muda com mouse
     const texto = document.querySelector('#passar');
 
-    texto.onmouseover = function() {
+    texto.onmouseover = () => {
         texto.innerHTML = 'Obrigado por passares!';
     };
 
-    texto.onmouseout = function() {
+    texto.onmouseout = () => {
         texto.innerHTML = 'Passa por aqui!';
     };
 
@@ -17,19 +20,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const butao_green = document.querySelector('#green'); // botao green
     const butao_blue = document.querySelector('#blue'); // botao blue
 
-    function mudar_cor(color) {
+    mudar_cor = (color) => {
         cor_texto.style.color = color;
     }
 
-    butao_red.onclick = function() {
+    butao_red.onclick = () => {
         mudar_cor('red');
     };
 
-    butao_green.onclick = function() {
+    butao_green.onclick = () => {
         mudar_cor('green');
     };
 
-    butao_blue.onclick = function() {
+    butao_blue.onclick = () => {
         mudar_cor('blue');
     };
 
@@ -39,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const colors = ['red', 'green', 'blue', 'yellow'];
     let indexCores = 0;
 
-    function changeColor() {
+    changeColor = () => {
         inputTexto.style.backgroundColor = colors[indexCores];
         indexCores = (indexCores + 1) % colors.length;
     }
@@ -50,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // seleciona cor - background
     const colorSelect = document.querySelector('#colorSelect');
     
-    colorSelect.addEventListener('change', function() {
+    colorSelect.addEventListener('change', () => {
         document.body.style.backgroundColor = this.value;
     });
 
@@ -65,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     numero.textContent = localStorage.getItem('counter');
 
-    function count() {
+    count = () => {
         let counter = localStorage.getItem('counter');
         counter++;
         numero.textContent = counter;
@@ -81,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('#phraseForm');
     const frase = document.querySelector('#buildPhrase');
 
-    form.onsubmit = function() {
+    form.onsubmit = () => {
         frase.textContent = `Olá, o/a ${nome.value} tem ${idade.value}!`;
         return false;
     };
@@ -90,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // contador com butao
     let counterAuto = 0;
 
-    function automaticCount() {
+    automaticCount = () => {
         counterAuto++;
         document.querySelector('#contadorSegundos').innerHTML = counterAuto;
     }
