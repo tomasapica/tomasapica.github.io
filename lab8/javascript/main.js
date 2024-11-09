@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const frase = document.querySelector('#buildPhrase');
 
     form.onsubmit = () => {
-        frase.textContent = `Olá, o/a ${nome.value} tem ${idade.value}!`;
+        frase.textContent = `Olá, o(a) ${nome.value} tem ${idade.value}!`;
         return false;
     };
 
