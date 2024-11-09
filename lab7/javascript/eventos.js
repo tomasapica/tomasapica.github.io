@@ -32,29 +32,25 @@ document.addEventListener('DOMContentLoaded', function() {
         moveBox.textContent = `Posição X: ${event.offsetX}, Y: ${event.offsetY}`;
     });
 
-    // Seleciona o campo de entrada
+    // seleciona o campo de entrada
     const inputField = document.querySelector('#inputField');
 
-    // Evento de keydown: altera o estilo quando uma tecla é pressionada
+    // evento de keydown: altera o estilo quando uma tecla é pressionada
     inputField.addEventListener('keydown', function() {
         inputField.style.backgroundColor = 'red';
     });
 
-    // Evento de keyup: retorna ao estilo original quando a tecla é liberada
+    // evento de keyup: retorna ao estilo original quando a tecla é largada
     inputField.addEventListener('keyup', function() {
         inputField.style.backgroundColor = 'white';
     });
 
-    // Evento de change no select
-    const colorSelect = document.querySelector('#colorSelect');
-    colorSelect.addEventListener('change', function() {
-        document.body.style.backgroundColor = colorSelect.value;
-    });
-
     // Evento de submit no formulário
     const colorForm = document.querySelector('#colorForm');
+    const colorSelect = document.querySelector('#colorSelect');
+    
     colorForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // impede o comportamento padrão de dar reset na página
         document.body.style.backgroundColor = colorSelect.value;
-        return false;
     });
 });
