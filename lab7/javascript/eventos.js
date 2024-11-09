@@ -49,8 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const colorForm = document.querySelector('#colorForm');
     const colorSelect = document.querySelector('#colorSelect');
     
-    colorForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // impede o comportamento padrão de dar reset na página
+    colorForm.onsubmit = function() {
         document.body.style.backgroundColor = colorSelect.value;
-    });
+        return false;
+    };
 });

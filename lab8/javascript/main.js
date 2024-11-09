@@ -1,14 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // frase muda com mouse
-    const frase = document.querySelector('#passar');
+    // texto muda com mouse
+    const texto = document.querySelector('#passar');
 
-    frase.onmouseover = function() {
-        frase.innerHTML = 'Obrigado por passares!';
+    texto.onmouseover = function() {
+        texto.innerHTML = 'Obrigado por passares!';
     };
 
-    frase.onmouseout = function() {
-        frase.innerHTML = 'Passa por aqui!';
+    texto.onmouseout = function() {
+        texto.innerHTML = 'Passa por aqui!';
     };
+
 
     // muda cor frase butoes
     const cor_texto = document.querySelector('#pintar');
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         mudar_cor('blue');
     };
 
+
     // muda cor ao escrever
     const inputTexto = document.querySelector('#escrever');
     const colors = ['red', 'green', 'blue', 'yellow'];
@@ -44,28 +46,54 @@ document.addEventListener('DOMContentLoaded', function() {
 
     inputTexto.addEventListener('input', changeColor);
 
-    // muda cor background submeter form
-    const corInput = document.querySelector('#cor_ingles');
-    const butaoSubmit = document.querySelector('input[type="submit"]');
 
-    function changeBackgroundColor() {
-        const color = corInput.value;
-        document.body.style.backgroundColor = color;
-    }
-
-    butaoSubmit.addEventListener('click', function() {;
-        changeBackgroundColor();
-        corInput.value = "";
-        return false;
+    // seleciona cor - background
+    const colorSelect = document.querySelector('#colorSelect');
+    
+    colorSelect.addEventListener('change', function() {
+        document.body.style.backgroundColor = this.value;
     });
 
-    // contador com butao
-    let counter = 0;
 
-    function count() {
-        counter++;
-        document.querySelector('#contador').innerHTML = counter;
+    // contador com butao
+    const numero = document.querySelector('#contador');
+    const butaoContar = document.querySelector('#butaoContar');
+
+    if(!localStorage.getItem('counter')) {
+        localStorage.setItem('counter', 0);
     }
 
-    document.querySelector('#butao_contar').onclick = count;
+    numero.textContent = localStorage.getItem('counter');
+
+    function count() {
+        let counter = localStorage.getItem('counter');
+        counter++;
+        numero.textContent = counter;
+        localStorage.setItem('counter', counter);
+    }
+
+    butaoContar.onclick = count;
+
+
+    // contruir uma frase
+    const nome = document.querySelector('#nome');
+    const idade = document.querySelector('#idade');
+    const form = document.querySelector('#phraseForm');
+    const frase = document.querySelector('#buildPhrase');
+
+    form.onsubmit = function() {
+        frase.textContent = `Olá, o/a ${nome.value} tem ${idade.value}!`;
+        return false;
+    };
+
+
+    // contador com butao
+    let counterAuto = 0;
+
+    function automaticCount() {
+        counterAuto++;
+        document.querySelector('#contadorSegundos').innerHTML = counterAuto;
+    }
+
+    setInterval(automaticCount, 1000)
 });

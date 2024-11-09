@@ -26,18 +26,33 @@
                 <button id="green">Green</button>
                 <button id="blue">Blue</button>
             </li>
-            <li>
+            <li id="escrever">
                 Experimenta escrever...
                 <input type="text" id="escrever" name="texto">
             </li>
-            <li>
-                Escolha uma cor em inglês:
-                <input type="text" id="cor_ingles" name="texto">
-                <input type="submit" value="submeter">
+            <li id="selecionar">
+                Escolha uma cor:
+                <select id="colorSelect">
+                    <option value="white">White</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                </select>
             </li>
             <li>
-                <button id="butao_contar">Conta!</button>
+                <button id="butaoContar">Conta!</button>
                 <span id="contador">0</span>
+            </li>
+            <li id="frase">
+                <form id="phraseForm">
+                    <input type="fname" id="nome" name="nome" placeholder="Insira o seu nome">
+                    <input type="number" id="idade" name="idade" placeholder="Insira a sua idade">
+                    <input type="submit" value="Submit">
+                    <p id="buildPhrase"></p>
+                </form>
+            </li>
+            <li id="automaticCounter">
+                Automatic Counter: 
+                <span id="contadorSegundos">0</span>
             </li>
         </ol>
     </main>

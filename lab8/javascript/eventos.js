@@ -45,12 +45,12 @@ document.addEventListener('DOMContentLoaded', function() {
         inputField.style.backgroundColor = 'white';
     });
 
-    // Evento de submit no formulário
+    // evento de submit no formulário
     const colorForm = document.querySelector('#colorForm');
     const colorSelect = document.querySelector('#colorSelect');
     
-    colorForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // impede o comportamento padrão de dar reset na página
+    colorForm.onsubmit = function() {
         document.body.style.backgroundColor = colorSelect.value;
-    });
+        return false;
+    };
 });
