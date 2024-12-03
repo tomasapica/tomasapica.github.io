@@ -13,6 +13,29 @@ document.addEventListener('DOMContentLoaded', function() {
         carregarProdutos(produtos);
         atualizaCesto();
     });
+
+    fetch('https://deisishop.pythonanywhere.com/categories/')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        const categorias = data;
+        const sectionFiltros = document.querySelector('#filtros');
+        const select = document.createElement('select');
+        const label = document.createElement('label');
+        const optionDefault = document.createElement('option');
+        
+        label.innerHTML = `Filtrar `;
+        sectionFiltros.append(label);
+        sectionFiltros.append(select);
+        select.append(optionDefault);
+        optionDefault.innerHTML = `Todas as categorias`;
+
+        categorias.forEach(categoria => {
+            const option = document.createElement('option');
+            select.append(option);
+            option.innerHTML = categoria;
+        });
+    });
 });
 
 function carregarProdutos(produtos) {

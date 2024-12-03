@@ -60,6 +60,23 @@ section {
     color: #333;
 }
 
+#produtos {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#filtros {
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 20px 30px 0px 30px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
 #artigos {
     text-align: center;
     padding: 40px 20px;

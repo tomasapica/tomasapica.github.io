@@ -60,6 +60,10 @@ section {
     color: #333;
 }
 
+#produtos {
+    padding-top: 100px;
+}
+
 #artigos {
     text-align: center;
     padding: 40px 20px;
