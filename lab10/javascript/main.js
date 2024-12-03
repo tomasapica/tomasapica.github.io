@@ -1,11 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
-    if (!localStorage.getItem('produtos-selecionados')) {
-        const lista = [];
-        localStorage.setItem('produtos-selecionados', JSON.stringify(lista));
-    }
+    fetch('https://deisishop.pythonanywhere.com/products/')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        const produtos = data;
 
-    carregarProdutos(produtos);
-    atualizaCesto();
+        if (!localStorage.getItem('produtos-selecionados')) {
+            const lista = [];
+            localStorage.setItem('produtos-selecionados', JSON.stringify(lista));
+        }
+    
+        carregarProdutos(produtos);
+        atualizaCesto();
+    });
 });
 
 function carregarProdutos(produtos) {
