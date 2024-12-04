@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/deisi_ball.webp" type="icon">
     <link rel="stylesheet" href="css/styles.css">
     <title>Loja Online</title>
 </head>
 <body>
     <header>
-        <h1>Loja</h1>
+        <img src="images/deisi.svg" alt="Deisi ULusofona">
+        <h1>DEISI Lifestyle</h1>
         <nav>
             <ul>
                 <li><a href="#produtos">Produtos</a></li>
@@ -31,7 +33,18 @@
             <section id="artigos-cesto">
 
             </section>
-            <h3 id="preco-total">Preço Total: 0.00€</h3>
+            <section id="checkout">
+                <h3 id="preco-total">Preço Total: 0.00€</h3>
+                <p>
+                    <label>És estudante do DEISI?</label>
+                    <input id="checkbox-estudante" type="checkbox">
+                </p>
+                <p>
+                    <label>Cupão de desconto:</label>
+                    <input id="desconto" type="text">
+                </p>
+                <button id="comprar">Comprar</button>
+            </section>
         </section>
     </main>
     <footer>
