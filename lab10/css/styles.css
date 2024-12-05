@@ -27,7 +27,7 @@ body {
 header {
     position: fixed;
     width: 100%;
-    background-color: turquoise;
+    background-color: #8aaae5;
     color: white;
     padding: 20px;
     display: flex;
@@ -127,7 +127,7 @@ article h3 {
 
 article h4 {
     font-size: 16px;
-    color: turquoise;
+    color: #8aaae5;
     margin-bottom: 10px;
 }
 
@@ -140,7 +140,7 @@ article p {
 }
 
 button {
-    background-color: turquoise;
+    background-color: #8aaae5;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -151,14 +151,14 @@ button {
 }
 
 button:hover {
-    background-color: rgb(100, 255, 240);
+    background-color: #8aaae5;
     color: #333;
     transition: 0.2s;
 }
 
 #cesto {
     color: white;
-    background-color: turquoise;
+    background-color: #8aaae5;
     text-align: center;
     padding: 40px 20px;
     margin-bottom: 30px;

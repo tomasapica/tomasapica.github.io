@@ -98,15 +98,6 @@ function realizarCompra() {
 
     const checkboxEstudante = document.querySelector('#checkbox-estudante');
     const inputCupao = document.querySelector('#desconto');
-    let totalCost = produtosSelecionados.reduce((soma, produto) => soma + produto.price, 0);
-
-    if (checkboxEstudante.checked) {
-        totalCost *= 0.75; // 25% desconto
-    }
-
-    if (inputCupao.value.toLowerCase() === 'black-friday') {
-        totalCost *= 0.90; // 10% desconto adicional - sobre o valor final a pagar
-    }
 
     const dadosCompra = {
         products: produtosSelecionados.map(produto => produto.id),
@@ -127,7 +118,7 @@ function realizarCompra() {
         if (data.error) {
             alert(`Erro: ${data.error}`);
         } else {
-            resumoCompra(totalCost, data.reference);
+            resumoCompra(data.totalCost, data.reference);
         }
     });
 }
